@@ -1,0 +1,33 @@
+import styled from "styled-components";
+
+export const ProjectContainer = styled.div`
+  margin-top: 0.5rem;
+  margin-bottom: 0.875rem;
+`;
+
+export const ProjectsIntro = styled.div`
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+`;
+
+export const ProjectTitle = styled.div`
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: ${({ theme }) => theme.colors?.neon?.electricBlue};
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
+  transition: all 0.2s ease;
+
+  &:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+    text-shadow: 0 0 12px rgba(0, 212, 255, 0.6);
+  }
+`;
+
+export const ProjectDesc = styled.div`
+  color: ${({ theme }) => theme.colors?.text[200]};
+  text-align: justify;
+  line-height: 1.5rem;
+  max-width: 500px;
+`;
